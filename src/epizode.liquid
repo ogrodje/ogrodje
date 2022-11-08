@@ -1,0 +1,15 @@
+---
+layout: layouts/home.liquid
+title: Epizode
+---
+<h1>Epizode</h1>
+
+<ul>
+  {% for episode in episodes %}
+    <li>
+      <a href="/epizoda/{{ episode.code }}-{{ episode.title | slug }}.html">{{ episode.code }} - {{ episode.title }}</a>
+    </li>
+  {% else %}
+    <li>Ni epizod.</li>
+  {% endfor %}
+</ul>

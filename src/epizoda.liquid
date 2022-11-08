@@ -1,0 +1,11 @@
+---
+layout: layouts/home.liquid
+
+pagination:
+  data: episodes
+  size: 1
+  alias: episode
+
+permalink: "epizoda/{{ episode.code }}-{{ episode.title | slug }}.html"
+---
+<h1>{{ episode.title }}</h1>
